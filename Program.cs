@@ -31,16 +31,6 @@ public class CollatzConjecture
         int maxNumber = 0;
         int maxSteps = 0;
 
-        /*
-        for (int i = 1; i <= userInput; i++)
-        {
-            if (maxSteps < Collatz(i))
-            {
-                maxSteps = Collatz(i);
-                maxNumber = i;
-            }
-        }*/
-
         /* Make like rust program with defined starting and finishing numbers */
 
         Parallel.For(1, userInput, i =>
