@@ -2,9 +2,9 @@
 
 public class CollatzConjecture
 {
-    public static int Collatz(int number)
+    public static long Collatz(long number)
     {
-        int counter = 0;
+        long counter = 0;
         // if even, divide by 2
         // else times by 3 and add 1
         while (number > 1)
@@ -28,11 +28,11 @@ public class CollatzConjecture
         // Console.WriteLine("Enter a positive integer: ");
         // int userInput = int.Parse(Console.ReadLine());
 
-        int start = 1;
-        int finish = 1000000;
+        long start = 1;
+        long finish = 1000000;
 
-        int maxNumber = 0;
-        int maxSteps = 0;
+        long maxNumber = 0;
+        long maxSteps = 0;
 
         Parallel.For(start, finish, i =>
         {
