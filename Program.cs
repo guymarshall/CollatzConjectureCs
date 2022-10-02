@@ -25,15 +25,16 @@ public class CollatzConjecture
 
     public static void Main()
     {
-        Console.WriteLine("Enter a positive integer: ");
-        int userInput = int.Parse(Console.ReadLine());
+        // Console.WriteLine("Enter a positive integer: ");
+        // int userInput = int.Parse(Console.ReadLine());
+
+        int start = 1;
+        int finish = 1000000;
 
         int maxNumber = 0;
         int maxSteps = 0;
 
-        /* Make like rust program with defined starting and finishing numbers */
-
-        Parallel.For(1, userInput, i =>
+        Parallel.For(start, finish, i =>
         {
             if (maxSteps < Collatz(i))
             {
