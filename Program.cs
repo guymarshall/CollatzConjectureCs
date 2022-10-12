@@ -29,7 +29,7 @@ public class CollatzConjecture
         // int userInput = int.Parse(Console.ReadLine());
 
         long start = 1;
-        long finish = 1000000;
+        long finish = 10000000;
 
         long maxNumber = 0;
         long maxSteps = 0;
@@ -38,6 +38,7 @@ public class CollatzConjecture
         {
             if (maxSteps < Collatz(i))
             {
+                Console.WriteLine($"{i}: {maxSteps}");
                 maxSteps = Collatz(i);
                 maxNumber = i;
             }
